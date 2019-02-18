@@ -1,0 +1,2 @@
+# KuchikDiplomaProject
+Дипломный проект SmartLog
