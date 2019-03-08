@@ -4,7 +4,7 @@
 
 body {
     margin: 0 auto;
-    font-family: "Roboto";
+    font-family: "Akrobat";
     max-width: 1920px;
 }
 
@@ -22,4 +22,517 @@ ul {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+header .roundClock {
+    font-size: 17px;
+    line-height: 24px;
+    color: #a3a3a3;
+}
+
+header .headerLoc a {
+    font-size: 17px;
+    line-height: 24px;
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+header .loginReg a {
+    font-size: 15px;
+    line-height: 24px;
+    color: #00acf2;
+    text-decoration: none;
+}
+
+header .logo .colorLogo1 {
+    font-size: 38px;
+    line-height: 15px;
+    color: #191919;
+    font-weight: 800;
+}
+
+header .logo .colorLogo2 {
+    font-size: 38px;
+    line-height: 15px;
+    color: #00acf2;
+    font-weight: 800;
+}
+
+header .logo span {
+    font-size: 13px;
+    line-height: 15px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+
+.headerMenu li {
+    display: inline-block;
+}
+
+.headerMenu a {
+    font-size: 17px;
+    line-height: 15px;
+    color: #191919;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header [class*="icon"] {
+    color: #1d1d1d;
+    font-size: 15px;
+}
+
+.logoSlider {
+    height: 685px;
+    background-position: 50% 50%;
+    background-size: cover;
+
+}
+
+.logoSlider .company span {
+    font-size: 27px;
+    line-height: 130px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.caption1 {
+    font-size: 121px;
+    line-height: 130px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.company .caption1 span {
+    font-size: 121px;
+    line-height: 130px;
+    color: #00acf2;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/*.logoSlider .company a {*/
+    /*font-size: 21px;*/
+    /*line-height: 55px;*/
+    /*text-align: center;*/
+    /*color: #ffffff;*/
+    /*font-weight: 800;*/
+    /*background-color: #00acf2;*/
+    /*border: none;*/
+    /*text-transform: uppercase;*/
+    /*width: 270px;*/
+    /*text-decoration: none;*/
+
+
+.company a {
+    font-size: 21px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 270px;
+    background-color: #00acf2;
+    border: none;
+    text-decoration: none;
+}
+
+.aboutUs {
+    height: 690px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.logoCompany .caption2 {
+    font-size: 55px;
+    line-height: 61px;
+    color: #191919;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.logoCompany h2 {
+    font-size: 90px;
+    line-height: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.textBlock1 {
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.btnColor2 {
+    border: 1px #ffffff;
+    text-decoration: none;
+}
+
+.infoCompany a {
+    font-size: 19px;
+    line-height: 55px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btnColor2 {
+    border: 1px #ffffff;
+    text-decoration: none;
+}
+.typesStat {
+    display: inline-block;
+}
+.statistics span {
+    font-size: 55px;
+    line-height: 69px;
+    color: #191919;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+.statistics .textStat {
+    font-size: 17px;
+    line-height: 69px;
+    color: #191919;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.statistics [class*="icon"] {
+    color: #00adf1;
+    font-size: 50px;
+
+}
+
+
+.caption2 {
+    font-size: 55px;
+    line-height: 61px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.ourService {
+    height: 1080px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.titleServ h2 {
+    color: #191919;
+}
+
+.menuServ img[src*="png"] {
+    background-color: #36414b;
+}
+
+.menuServ li {
+    font-size: 23px;
+    line-height: 98px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px #4f6275;
+
+}
+
+.menuServ li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+
+}
+.nameServ h2 {
+    color: #ffcd20;
+}
+.caption3 {
+    font-size: 41px;
+    line-height: 61px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.nameAct h3 {
+    color: #00b7ff;
+}
+
+.card {
+    display: inline-block;
+}
+.card .cardColor1 {
+    font-size: 19px;
+    line-height: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.card .cardColor2 {
+    font-size: 15px;
+    line-height: 20px;
+    color: #888f94;
+}
+
+.card .cardColor3 {
+    font-size: 19px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.card .cardColor4 {
+    font-size: 15px;
+    line-height: 48px;
+    color: #021120;
+}
+
+.infocard li {
+    font-size: 17px;
+    line-height: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px #4f6275;
+}
+
+.infocard li .btnColor3 {
+    text-decoration: none;
+    color: #00adf1;
+}
+.infocard li .btnColor4 {
+    text-decoration: none;
+    color: #ffcd20;
+}
+.form1 label {
+    font-size: 18px;
+    line-height: 55px;
+    color: #191919;
+}
+input[placeholder] {
+    font-size: 21px;
+    text-align: right;
+    font-weight: bold;
+    color: #191919;
+}
+
+.choiceServ img {
+    background-color: #00adf1;
+}
+
+.invest a {
+    font-size: 19px;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    color: #00adf1;
+}
+
+.advantages {
+    height: 740px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.adv img[src*="png"] {
+    background-color: #ffcd20;
+    font-size: 75px;
+}
+
+.caption5 {
+    font-size: 19px;
+    line-height: 55px;
+    color: #00adf1;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.textBlock2 {
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 30px;
+    color: #191919;
+}
+
+.guarantees {
+    height: 510px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+ .caption6 {
+    font-size: 33px;
+    line-height: 61px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+ .guarantees h3 {
+     color: #ffffff;
+ }
+
+ .leftGuar .btnColor2 {
+     font-size: 19px;
+     line-height: 55px;
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #ffffff;
+     font-weight: 800;
+ }
+
+.rightGuar .btnColor4 {
+    font-size: 19px;
+    line-height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffcd20;
+    font-weight: 800;
+}
+
+.ourNews {
+    height: 900px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.cardNews1 span {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 55px;
+    font-weight: bold;
+    color: #191919;
+}
+
+.allNews a {
+    font-size: 19px;
+    line-height: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #00adf1;
+    text-decoration: none;
+}
+
+.reviews {
+    height: 720px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.titleRev h3 {
+    color: #ffffff;
+}
+
+.slideRev .clients {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffcd20;
+}
+
+.slideRev .clientsPos {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.payments  {
+    height: 265px;
+}
+
+footer {
+    height: 545px;
+    background-color: #0a1826;
+}
+
+.caption4 {
+    font-size: 23px;
+    line-height: 61px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+footer h4 {
+    color: #ffffff;
+}
+.textBlock3 {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a3a3a3;
+}
+
+.footMenu img {
+    background-color: #25313e;
+}
+
+.footMenu li a {
+    font-size: 18px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #00acf2;
+    text-decoration: none;
+}
+
+.link1 {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.footCont [class*="icon"] {
+    font-size: 20px;
+    color: #ffffff;
+}
+.link2  {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #00a9f1;
+    text-decoration: none;
+}
+
+.footCont span {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a3a3a3;
+}
+
+footer .logo .colorLogo1 {
+    font-size: 38px;
+    line-height: 15px;
+    color: #191919;
+    font-weight: 800;
+}
+
+footer .logo .colorLogo2 {
+    font-size: 38px;
+    line-height: 15px;
+    color: #00acf2;
+    font-weight: 800;
+}
+
+footer .logo span {
+    font-size: 13px;
+    line-height: 15px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+
+.copyright span {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5a6062;
+}
+
+.social [class*="icon"] {
+    font-size: 20px;
+    color: #00acf2;
+    text-decoration: none;
 }

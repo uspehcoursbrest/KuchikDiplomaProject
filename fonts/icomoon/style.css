@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?sq8r82');
-  src:  url('fonts/icomoon.eot?sq8r82#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?sq8r82') format('truetype'),
-    url('fonts/icomoon.woff?sq8r82') format('woff'),
-    url('fonts/icomoon.svg?sq8r82#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?qkhxwq');
+  src:  url('fonts/icomoon.eot?qkhxwq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qkhxwq') format('truetype'),
+    url('fonts/icomoon.woff?qkhxwq') format('woff'),
+    url('fonts/icomoon.svg?qkhxwq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -62,6 +62,9 @@
 }
 .icon-message:before {
   content: "\e911";
+}
+.icon-headphones:before {
+  content: "\e910";
 }
 .icon-clock1:before {
   content: "\e94e";
