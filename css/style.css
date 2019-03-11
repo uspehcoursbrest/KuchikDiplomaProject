@@ -24,6 +24,12 @@ ul {
     padding: 0 15px;
 }
 
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 header .roundClock {
     font-size: 17px;
     line-height: 24px;
@@ -44,6 +50,28 @@ header .loginReg a {
     text-decoration: none;
 }
 
+.logMenu {
+    float: left;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 315px;
+}
+
+header .logo span {
+    font-size: 13px;
+    line-height: 15px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+
+header .logo span+span {
+    display: block;
+    text-align: center;
+}
+
 header .logo .colorLogo1 {
     font-size: 38px;
     line-height: 15px;
@@ -58,15 +86,15 @@ header .logo .colorLogo2 {
     font-weight: 800;
 }
 
-header .logo span {
-    font-size: 13px;
-    line-height: 15px;
-    color: #b3b3b3;
-    text-transform: uppercase;
+
+.logMenu .headerMenu {
+    float: right;
+    text-align: center;
 }
 
 .headerMenu li {
     display: inline-block;
+    padding: 0px 22px;
 }
 
 .headerMenu a {
@@ -75,6 +103,7 @@ header .logo span {
     color: #191919;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 header [class*="icon"] {
@@ -82,11 +111,22 @@ header [class*="icon"] {
     font-size: 15px;
 }
 
+.bredcrumds li {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffcd20;
+}
+
+.bredcrumds li a {
+    text-decoration: none;
+    color: #999999
+}
+
 .logoSlider {
-    height: 685px;
     background-position: 50% 50%;
     background-size: cover;
-
+    text-align: center;
 }
 
 .logoSlider .company span {
@@ -97,7 +137,7 @@ header [class*="icon"] {
     text-transform: uppercase;
 }
 
-.caption1 {
+.compSlider {
     font-size: 121px;
     line-height: 130px;
     color: #ffffff;
@@ -105,7 +145,7 @@ header [class*="icon"] {
     font-weight: 800;
 }
 
-.company .caption1 span {
+.company .compSlider span {
     font-size: 121px;
     line-height: 130px;
     color: #00acf2;
@@ -113,36 +153,29 @@ header [class*="icon"] {
     font-weight: 800;
 }
 
-/*.logoSlider .company a {*/
-    /*font-size: 21px;*/
-    /*line-height: 55px;*/
-    /*text-align: center;*/
-    /*color: #ffffff;*/
-    /*font-weight: 800;*/
-    /*background-color: #00acf2;*/
-    /*border: none;*/
-    /*text-transform: uppercase;*/
-    /*width: 270px;*/
-    /*text-decoration: none;*/
-
-
 .company a {
     font-size: 21px;
     line-height: 55px;
-    text-align: center;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
+    display: inline-block;
     width: 270px;
     background-color: #00acf2;
-    border: none;
     text-decoration: none;
 }
 
 .aboutUs {
-    height: 690px;
     background-position: 50% 50%;
     background-size: cover;
+    float: left;
+    width: 100%;
+    padding: 150px 0px;
+}
+
+.logoCompany {
+    float: left;
+    width: 50%;
 }
 
 .logoCompany .caption2 {
@@ -159,6 +192,7 @@ header [class*="icon"] {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
+    margin-top: 75px;
 }
 
 .textBlock1 {
@@ -169,32 +203,59 @@ header [class*="icon"] {
 }
 
 .btnColor2 {
-    border: 1px #ffffff;
+    text-transform: uppercase;
+    font-size: 19px;
+    line-height: 55px;
+    color: #ffffff;
+    font-weight: 800;
+    display: inline-block;
     text-decoration: none;
+    text-align: center;
+    border: 3px solid #ffffff;
+}
+
+.infoCompany {
+    float: left;
+    width: 50%;
 }
 
 .infoCompany a {
+    display: inline-block;
     font-size: 19px;
     line-height: 55px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
+    width: 210px;
+    border: 3px solid #ffffff;
+    margin-top: 60px;
 }
 
-.btnColor2 {
-    border: 1px #ffffff;
-    text-decoration: none;
+.statistics {
+    float: left;
+    width: 100%;
 }
+
 .typesStat {
-    display: inline-block;
+
+    width: 25%;
+    float: left;
 }
+
+.typesStat [class*="icon"] {
+    color: #00adf1;
+}
+
 .statistics span {
     font-size: 55px;
     line-height: 69px;
     color: #191919;
     text-transform: uppercase;
     font-weight: 800;
+}
 
+.typesStat > span {
+    display: block;
 }
 
 .statistics .textStat {
@@ -211,7 +272,6 @@ header [class*="icon"] {
 
 }
 
-
 .caption2 {
     font-size: 55px;
     line-height: 61px;
@@ -220,54 +280,99 @@ header [class*="icon"] {
 }
 
 .ourService {
-    height: 1080px;
+    float: left;
+    width: 100%;
     background-position: 50% 50%;
     background-size: cover;
 }
+
+.leftServ {
+    float: left;
+    width: 40%;
+}
+
+.rightServ {
+    float: left;
+    width: 60%;
+}
+
 .titleServ h2 {
     color: #191919;
 }
 
-.menuServ img[src*="png"] {
+.typServ {
+    margin-top: 95px;
+}
+
+.menuServ span img[src*="png"] {
     background-color: #36414b;
+    width: 70px;
+    height: 70px;
 }
 
 .menuServ li {
-    font-size: 23px;
-    line-height: 98px;
     font-weight: 800;
     text-transform: uppercase;
-    border: 1px #4f6275;
-
+    vertical-align: bottom;
 }
 
 .menuServ li a {
+    font-size: 23px;
+    line-height: 75px;
     text-decoration: none;
     color: #ffffff;
-    text-align: center;
-
+    display: inline-block;
+    border: 1px solid #4f6275;
+    width: 320px;
 }
+
 .nameServ h2 {
     color: #ffcd20;
 }
+
+.nameServ p {
+    margin-top: 55px;
+}
+
 .caption3 {
     font-size: 41px;
     line-height: 61px;
     font-weight: 800;
     text-transform: uppercase;
 }
+
+.nameAct {
+    margin-top: 60px;
+}
+
 .nameAct h3 {
     color: #00b7ff;
 }
 
-.card {
-    display: inline-block;
+.activeSlide {
+    float: left;
+    width: 100%;
+    margin-top: 60px;
 }
+
+.card {
+    float: left;
+    width: 50%;
+    background-color: #232f3b;
+}
+
+.card > img {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
 .card .cardColor1 {
     font-size: 19px;
     line-height: 48px;
     font-weight: 800;
     text-transform: uppercase;
+    background-color: #ffcd20;
 }
 
 .card .cardColor2 {
@@ -282,10 +387,20 @@ header [class*="icon"] {
     color: #ffffff;
     font-weight: bold;
 }
+
 .card .cardColor4 {
     font-size: 15px;
     line-height: 48px;
     color: #021120;
+
+}
+
+.card .cardColor5 {
+    font-size: 19px;
+    line-height: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #00b7ff;
 }
 
 .infocard li {
@@ -293,51 +408,122 @@ header [class*="icon"] {
     line-height: 55px;
     font-weight: 800;
     text-transform: uppercase;
-    border: 1px #4f6275;
+
+}
+
+.btnColor3 {
+    font-size: 19px;
+    line-height: 55px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #00adf1;
+    text-align: center;
+    border: 3px solid #00adf1;
 }
 
 .infocard li .btnColor3 {
-    text-decoration: none;
-    color: #00adf1;
+    width: 140px;
 }
-.infocard li .btnColor4 {
+
+.btnColor4 {
+    font-size: 19px;
+    line-height: 55px;
+    display: inline-block;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
     color: #ffcd20;
+    text-align: center;
+    border: 3px solid #ffcd20;
 }
+
+
+.infocard li .btnColor4 {
+    width: 140px;
+}
+
+.profit {
+    float: left;
+    width: 100%;
+}
+
+.leftCalc {
+    float: left;
+    width: 75%;
+}
+
+.rightCalc {
+    float: left;
+    width: 25%;
+}
+
+.totalCalc {
+    background-repeat: no-repeat;
+}
+
 .form1 label {
+    display: block;
     font-size: 18px;
     line-height: 55px;
     color: #191919;
 }
-input[placeholder] {
-    font-size: 21px;
-    text-align: right;
-    font-weight: bold;
-    color: #191919;
+
+.field {
+    position: relative;
 }
 
-.choiceServ img {
+.field img {
     background-color: #00adf1;
 }
 
+.field input {
+    width: 100%;
+}
+
 .invest a {
+    display: inline-block;
     font-size: 19px;
     line-height: 55px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 800;
     color: #00adf1;
+    width: 100%;
 }
 
 .advantages {
-    height: 740px;
+    float: left;
+    width: 100%;
     background-position: 50% 50%;
     background-size: cover;
 }
+
+.typAdv {
+    float: left;
+    width: 33%;
+}
+
+.typAdv1 {
+    float: left;
+    width: 33%;
+}
+
+.adv {
+    vertical-align: top;
+    display: inline-block;
+}
+
+
 .adv img[src*="png"] {
     background-color: #ffcd20;
     font-size: 75px;
+    width: 70px;
+    height: 70px;
 }
+
 
 .caption5 {
     font-size: 19px;
@@ -355,71 +541,132 @@ input[placeholder] {
 }
 
 .guarantees {
-    height: 510px;
+    float: left;
+    width: 100%;
     background-position: 50% 50%;
     background-size: cover;
 }
 
- .caption6 {
+.leftGuar {
+    float: left;
+    width: 50%;
+}
+
+.rightGuar {
+    float: left;
+    width: 50%;
+    padding-left: 90px;
+}
+
+.caption6 {
     font-size: 33px;
     line-height: 61px;
     text-transform: uppercase;
     font-weight: 800;
 }
 
- .guarantees h3 {
-     color: #ffffff;
- }
+.guarantees h3 {
+    color: #ffffff;
+}
 
- .leftGuar .btnColor2 {
-     font-size: 19px;
-     line-height: 55px;
-     text-decoration: none;
-     text-transform: uppercase;
-     color: #ffffff;
-     font-weight: 800;
- }
+.affProg {
+    padding: 120px 130px 80px 0px;
+}
+
+.affProg p {
+    margin-top: 80px;
+}
+
+.affProg a {
+    margin-top: 75px;
+}
+
+.depIns {
+    padding: 120px 40px 80px 0px;
+}
+
+.depIns p {
+    margin-top: 80px;
+}
+
+.depIns a {
+    margin-top: 75px;
+}
+
+
+.leftGuar .btnColor2 {
+    width: 165px;
+}
 
 .rightGuar .btnColor4 {
-    font-size: 19px;
-    line-height: 55px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffcd20;
-    font-weight: 800;
+    width: 165px;
 }
 
 .ourNews {
-    height: 900px;
+    float: left;
+    width: 100%;
     background-position: 50% 50%;
     background-size: cover;
 }
 
-.cardNews1 span {
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 55px;
-    font-weight: bold;
-    color: #191919;
+.titleOurNews {
+    text-align: center;
+    padding-top: 150px;
 }
 
-.allNews a {
-    font-size: 19px;
-    line-height: 55px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #00adf1;
+.cardNews1 {
+    float: left;
+    width: 33%;
+    padding-top: 90px;
+}
+
+.cardNews1 a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #191919;
     text-decoration: none;
 }
 
+.cardNews1 img {
+    width: 365px;
+    height: 200px;
+    margin: 30px 0px;
+}
+
+.allNews {
+    text-align: center;
+
+}
+
+.allNews a {
+    width: 205px;
+    margin: 120px 0px;
+}
+
 .reviews {
-    height: 720px;
     background-position: 50% 50%;
     background-size: cover;
+}
+
+.titleRev {
+    padding-top-top: 150px;
 }
 
 .titleRev h3 {
     color: #ffffff;
+    text-align: center;
+}
+
+.slideRev {
+    text-align: center;
+}
+.client {
+    padding-top: 65px;
+}
+
+.client span {
+    display: block;
 }
 
 .slideRev .clients {
@@ -428,22 +675,26 @@ input[placeholder] {
     font-weight: 800;
     text-transform: uppercase;
     color: #ffcd20;
+    text-align: center;
+    padding-top: 35px;
 }
 
-.slideRev .clientsPos {
+.slideRev span:last-child {
     font-family: Roboto;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
     color: #ffffff;
+    text-align: center;
+
 }
 
-.payments  {
-    height: 265px;
+.payments {
 }
+
+
 
 footer {
-    height: 545px;
     background-color: #0a1826;
 }
 
@@ -453,14 +704,36 @@ footer {
     text-transform: uppercase;
     font-weight: 800;
 }
+
 footer h4 {
     color: #ffffff;
 }
+
 .textBlock3 {
     font-family: Roboto;
     font-size: 16px;
     line-height: 24px;
     color: #a3a3a3;
+}
+
+.footBlock1 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+}
+
+.footServ {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.footCom {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.footCont {
+    display: inline-block;
 }
 
 .footMenu img {
@@ -484,11 +757,13 @@ footer h4 {
     text-decoration: none;
 }
 
+
 .footCont [class*="icon"] {
     font-size: 20px;
     color: #ffffff;
 }
-.link2  {
+
+.link2 {
     font-family: Roboto;
     font-size: 16px;
     line-height: 30px;
@@ -501,6 +776,44 @@ footer h4 {
     font-size: 16px;
     line-height: 30px;
     color: #a3a3a3;
+}
+
+.footLogo {
+    display: inline-block;
+}
+
+.footLogo span {
+    font-size: 13px;
+    line-height: 15px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+
+.footLogo span+span {
+    display: block;
+    text-align: right;
+}
+
+.footLogo .colorLogo1 {
+    font-size: 38px;
+    line-height: 15px;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.footLogo .colorLogo2 {
+    font-size: 38px;
+    line-height: 15px;
+    color: #00acf2;
+    font-weight: 800;
+}
+
+.copyright {
+    display: inline-block;
+}
+
+.social {
+    display: inline-block;
 }
 
 footer .logo .colorLogo1 {
