@@ -8,6 +8,10 @@ body {
     max-width: 1920px;
 }
 
+.bodyWrap {
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -30,10 +34,41 @@ ul {
     clear: both;
 }
 
+.headerTable {
+    display: table;
+    margin-top: 15px;
+}
+
+.headerTable .item {
+    display: table-cell;
+}
+
+.headerTable .roundClock.item {
+    width: 430px;
+}
+
+.headerTable .headerLoc.item {
+    width: 385px;
+}
+
+.headerTable .loginReg.item {
+    width: 245px;
+}
+
+.headerTable .lang.item {
+    width: 105px;
+}
+
+
 header .roundClock {
     font-size: 17px;
     line-height: 24px;
     color: #a3a3a3;
+    padding-left: 20px;
+}
+
+header [class*="icon"] {
+    padding-right: 10px;
 }
 
 header .headerLoc a {
@@ -48,6 +83,7 @@ header .loginReg a {
     line-height: 24px;
     color: #00acf2;
     text-decoration: none;
+    padding-right: 20px;
 }
 
 .logMenu {
@@ -57,7 +93,18 @@ header .loginReg a {
 
 .logo {
     float: left;
-    width: 315px;
+    width: 35%;
+    margin: 45px 0px 40px;
+}
+
+.logo .textLogo {
+    display: inline-block;
+}
+
+.headerMenu {
+    float: left;
+    width: 65%;
+    padding-left: 25px;
 }
 
 header .logo span {
@@ -67,9 +114,9 @@ header .logo span {
     text-transform: uppercase;
 }
 
-header .logo span+span {
+.textLogo > span {
     display: block;
-    text-align: center;
+    margin-top: 10px;
 }
 
 header .logo .colorLogo1 {
@@ -86,10 +133,8 @@ header .logo .colorLogo2 {
     font-weight: 800;
 }
 
-
-.logMenu .headerMenu {
-    float: right;
-    text-align: center;
+.headerMenu {
+    margin: 75px -22px 0px;
 }
 
 .headerMenu li {
@@ -99,11 +144,10 @@ header .logo .colorLogo2 {
 
 .headerMenu a {
     font-size: 17px;
-    line-height: 15px;
     color: #191919;
     text-decoration: none;
     font-weight: bold;
-
+    text-align: left;
 }
 
 header [class*="icon"] {
@@ -112,15 +156,22 @@ header [class*="icon"] {
 }
 
 .bredcrumds li {
+    display: inline-block;
     font-size: 17px;
     line-height: 20px;
     font-weight: 300;
     color: #ffcd20;
+    padding: 140px 15px 20px 0px;
+}
+
+.bredcrumds li:nth-child(2),
+.bredcrumds li:nth-child(4) {
+    color: #ffffff;
 }
 
 .bredcrumds li a {
     text-decoration: none;
-    color: #999999
+    color: #ffffff;
 }
 
 .logoSlider {
@@ -131,15 +182,17 @@ header [class*="icon"] {
 
 .logoSlider .company span {
     font-size: 27px;
-    line-height: 130px;
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
 }
 
+.company {
+    padding-top: 230px;
+}
+
 .compSlider {
     font-size: 121px;
-    line-height: 130px;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
@@ -147,7 +200,6 @@ header [class*="icon"] {
 
 .company .compSlider span {
     font-size: 121px;
-    line-height: 130px;
     color: #00acf2;
     text-transform: uppercase;
     font-weight: 800;
@@ -163,6 +215,7 @@ header [class*="icon"] {
     width: 270px;
     background-color: #00acf2;
     text-decoration: none;
+    margin: 60px 0px 185px;
 }
 
 .aboutUs {
@@ -236,14 +289,20 @@ header [class*="icon"] {
     width: 100%;
 }
 
-.typesStat {
+.stat {
+    margin: 130px 0px;
+}
 
+.typesStat {
     width: 25%;
     float: left;
 }
 
-.typesStat [class*="icon"] {
-    color: #00adf1;
+.stat .typesStat [class*="icon"] {
+    fill: #00adf1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .statistics span {
@@ -254,8 +313,17 @@ header [class*="icon"] {
     font-weight: 800;
 }
 
-.typesStat > span {
+.typesStat .typ1 {
+    display: inline-block;
+    padding-left: 60px;
+}
+
+.typ1 > span {
     display: block;
+}
+
+.stat .typesStat {
+    position: relative;
 }
 
 .statistics .textStat {
@@ -284,6 +352,7 @@ header [class*="icon"] {
     width: 100%;
     background-position: 50% 50%;
     background-size: cover;
+    padding: 150px 0px 185px;
 }
 
 .leftServ {
@@ -297,33 +366,40 @@ header [class*="icon"] {
 }
 
 .titleServ h2 {
-    color: #191919;
+    color: #ffffff;
 }
 
 .typServ {
     margin-top: 95px;
 }
 
-.menuServ span img[src*="png"] {
-    background-color: #36414b;
+.menuServ img[src*=img] {
+    margin: 15px 10px 15px 12px;
+}
+
+.menuServ span {
+    display: inline-block;
+    background-color: rgba(30, 51, 70, 0.77);
     width: 70px;
-    height: 70px;
+    height: 72px;
+    vertical-align: top;
 }
 
 .menuServ li {
     font-weight: 800;
     text-transform: uppercase;
-    vertical-align: bottom;
+    padding-bottom: 20px;
 }
 
 .menuServ li a {
     font-size: 23px;
-    line-height: 75px;
+    line-height: 70px;
     text-decoration: none;
     color: #ffffff;
     display: inline-block;
     border: 1px solid #4f6275;
     width: 320px;
+    text-align: center;
 }
 
 .nameServ h2 {
@@ -341,7 +417,7 @@ header [class*="icon"] {
     text-transform: uppercase;
 }
 
-.nameAct {
+.nameAct .titleAct {
     margin-top: 60px;
 }
 
@@ -352,27 +428,41 @@ header [class*="icon"] {
 .activeSlide {
     float: left;
     width: 100%;
-    margin-top: 60px;
+    margin: 60px -15px 0px;
+}
+
+.slideCard {
+    padding: 0px 15px;
+    float: left;
+    width: 50%;
 }
 
 .card {
-    float: left;
-    width: 50%;
-    background-color: #232f3b;
+    position: relative;
+    padding: 15px;
+    background-color: rgba(37, 48, 60, 0.77);
+}
+
+.card .icon-clock1 {
+    padding-right: 10px;
 }
 
 .card > img {
     width: 100%;
     height: 200px;
-    padding: 10px;
 }
 
 .card .cardColor1 {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 140px;
     font-size: 19px;
-    line-height: 48px;
     font-weight: 800;
     text-transform: uppercase;
     background-color: #ffcd20;
+    padding: 0px 5px;
 }
 
 .card .cardColor2 {
@@ -390,25 +480,36 @@ header [class*="icon"] {
 
 .card .cardColor4 {
     font-size: 15px;
-    line-height: 48px;
     color: #021120;
-
+    padding-right: 20px;
 }
 
 .card .cardColor5 {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 140px;
     font-size: 19px;
-    line-height: 48px;
     font-weight: 800;
     text-transform: uppercase;
     background-color: #00b7ff;
+    padding: 0px 5px;
 }
 
-.infocard li {
+.card .cardColor6 {
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.menuCard li {
     font-size: 17px;
     line-height: 55px;
     font-weight: 800;
     text-transform: uppercase;
-
+    border: 1px solid #ffffff;
 }
 
 .btnColor3 {
@@ -423,10 +524,6 @@ header [class*="icon"] {
     border: 3px solid #00adf1;
 }
 
-.infocard li .btnColor3 {
-    width: 140px;
-}
-
 .btnColor4 {
     font-size: 19px;
     line-height: 55px;
@@ -439,28 +536,29 @@ header [class*="icon"] {
     border: 3px solid #ffcd20;
 }
 
-
-.infocard li .btnColor4 {
+.card .cardButt a {
     width: 140px;
+}
+
+.cardButt a:first-child {
+    margin-right: 7px;
 }
 
 .profit {
     float: left;
     width: 100%;
+    background-repeat: no-repeat;
+    padding: 160px 0px 140px;
 }
 
 .leftCalc {
     float: left;
-    width: 75%;
+    width: 70%;
 }
 
 .rightCalc {
     float: left;
-    width: 25%;
-}
-
-.totalCalc {
-    background-repeat: no-repeat;
+    width: 30%;
 }
 
 .form1 label {
@@ -470,16 +568,37 @@ header [class*="icon"] {
     color: #191919;
 }
 
+.field img[src*="img"] {
+    margin: 12px 15px 15px 10px;
+}
+
+.field:first-child span {
+    background-color: #00adf1;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
 .field {
     position: relative;
 }
 
-.field img {
-    background-color: #00adf1;
+.formCalc .field input {
+    width: 100%;
+    height: 40px;
 }
 
-.field input {
-    width: 100%;
+.rightCalc .field:nth-child(2) span,
+.rightCalc .field:nth-child(3) span,
+.rightCalc .field:nth-child(4) span {
+    position: absolute;
+    display: block;
+    right: 15px;
+    bottom: 10px;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .invest a {
@@ -492,6 +611,7 @@ header [class*="icon"] {
     font-weight: 800;
     color: #00adf1;
     width: 100%;
+    margin-top: 45px;
 }
 
 .advantages {
@@ -499,35 +619,53 @@ header [class*="icon"] {
     width: 100%;
     background-position: 50% 50%;
     background-size: cover;
+    padding: 145px 0px 170px;
 }
+
 
 .typAdv {
     float: left;
-    width: 33%;
-}
-
-.typAdv1 {
-    float: left;
-    width: 33%;
+    width: 41%;
+    margin-top: 100px;
 }
 
 .adv {
-    vertical-align: top;
-    display: inline-block;
+    margin: 0px 50px 65px 0px;
 }
 
+.adv img[src*="box"] {
+    margin: 15px 15px 15px 15px;
+}
 
-.adv img[src*="png"] {
+.adv img[src*="clock"] {
+    margin: 15px 15px 15px 8px;
+}
+
+.adv img[src*="world"] {
+    margin: 13px 15px 0px 9px;
+}
+
+.adv > span {
     background-color: #ffcd20;
-    font-size: 75px;
+    position: absolute;
     width: 70px;
     height: 70px;
+    text-align: center;
 }
 
+.adv .typ2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.typ2 > span {
+    position: relative;
+    display: block;
+    padding-left: 90px;
+}
 
 .caption5 {
     font-size: 19px;
-    line-height: 55px;
     color: #00adf1;
     text-transform: uppercase;
     font-weight: 800;
@@ -636,7 +774,6 @@ header [class*="icon"] {
 
 .allNews {
     text-align: center;
-
 }
 
 .allNews a {
@@ -649,10 +786,6 @@ header [class*="icon"] {
     background-size: cover;
 }
 
-.titleRev {
-    padding-top-top: 150px;
-}
-
 .titleRev h3 {
     color: #ffffff;
     text-align: center;
@@ -661,6 +794,7 @@ header [class*="icon"] {
 .slideRev {
     text-align: center;
 }
+
 .client {
     padding-top: 65px;
 }
@@ -686,16 +820,15 @@ header [class*="icon"] {
     font-weight: 300;
     color: #ffffff;
     text-align: center;
-
 }
 
 .payments {
+    padding: 115px 0px;
 }
-
-
 
 footer {
     background-color: #0a1826;
+    padding: 120px 0px 70px;
 }
 
 .caption4 {
@@ -717,36 +850,68 @@ footer h4 {
 }
 
 .footBlock1 {
-    vertical-align: top;
-    display: inline-block;
+    display: table;
+    height: 350px;
+    width: 100%;
     text-align: left;
 }
 
-.footServ {
-    display: inline-block;
-    margin-right: 40px;
+.footBlock1 .footBlock2 {
+    display: table-row;
 }
 
-.footCom {
-    display: inline-block;
-    margin-right: 40px;
-}
-
-.footCont {
-    display: inline-block;
+.footBlock1 .tab {
+    display: table-cell;
 }
 
 .footMenu img {
-    background-color: #25313e;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px 10px 5px;
+}
+
+.footMenu img[src*="train"] {
+    margin: 3px 5px 5px 7px;
+}
+
+.footMenu img[src*="car"] {
+    margin: 3px 5px 5px 7px;
+}
+
+.footMenu img[src*="ship"] {
+    margin: 1px 10px 5px 5px;
+}
+
+.footMenu img[src*="aircraft"] {
+    margin: 3px 5px 5px 3px;
+}
+
+.footMenu li {
+    padding: 10px 0px;
 }
 
 .footMenu li a {
+    margin: -10px 0px;
+}
+
+.footMenu li a {
+    display: inline-block;
     font-size: 18px;
-    line-height: 70px;
     text-transform: uppercase;
     font-weight: 700;
     color: #00acf2;
     text-decoration: none;
+    width: 180px;
+}
+
+.footMenu span {
+    display: inline-block;
+    background-color: rgba(37, 49, 62, 0.89);
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 5px;
 }
 
 .link1 {
@@ -757,10 +922,13 @@ footer h4 {
     text-decoration: none;
 }
 
-
 .footCont [class*="icon"] {
     font-size: 20px;
     color: #ffffff;
+}
+
+.footCont .icon-message {
+    font-size: 15px;
 }
 
 .link2 {
@@ -778,8 +946,8 @@ footer h4 {
     color: #a3a3a3;
 }
 
-.footLogo {
-    display: inline-block;
+.footCont [class*="icon"] {
+    padding-right: 15px;
 }
 
 .footLogo span {
@@ -789,9 +957,9 @@ footer h4 {
     text-transform: uppercase;
 }
 
-.footLogo span+span {
+.footLogo span + span {
     display: block;
-    text-align: right;
+
 }
 
 .footLogo .colorLogo1 {
@@ -808,12 +976,20 @@ footer h4 {
     font-weight: 800;
 }
 
+.footLogo .textLogo {
+    display: inline-block;
+}
+
 .copyright {
     display: inline-block;
 }
 
 .social {
     display: inline-block;
+}
+
+.social [class*=icon] {
+    padding-right: 25px;
 }
 
 footer .logo .colorLogo1 {
@@ -848,4 +1024,212 @@ footer .logo span {
     font-size: 20px;
     color: #00acf2;
     text-decoration: none;
+}
+
+.aboutCompany {
+    text-align: center;
+    padding-top: 140px;
+}
+
+.caption1 {
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+.aboutCompany .caption1 {
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    width: 515px;
+    margin: 0px 325px;
+}
+
+.history {
+    float: left;
+    width: 100%;
+    padding-top: 150px;
+}
+
+.hist {
+    float: left;
+    width: 50%;
+}
+
+.hist2 {
+    float: left;
+    width: 100%;
+    padding: 30px 0px 150px;
+}
+
+.historyComp .hist img {
+    width: 570px;
+    height: 380px;
+    margin-top: 96px;
+}
+
+.providedServ {
+    float: left;
+    width: 100%;
+    padding: 145px 0px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.titleProv h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.typService {
+    margin: 150px -15px;
+    vertical-align: middle;
+}
+
+.typService li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 0px 15px;
+    text-align: center;
+
+}
+
+.typService li a {
+    display: block;
+    font-size: 19px;
+    line-height: 98px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00b7ff;
+    border: 2px solid #3d4f5e;
+    height: 255px;
+    padding-top: 50px;
+}
+
+.typService li a span {
+    display: block;
+}
+
+.ourAdvantages {
+    padding: 150px 0px;
+}
+
+.titlAdvan {
+    text-align: center;
+}
+
+.ourAdvan {
+    float: left;
+    width: 100%;
+    padding-top: 135px;
+}
+
+.advan1 img[src*="box"] {
+    margin: 15px 15px 15px 15px;
+}
+
+.advan1 img[src*="clock"] {
+    margin: 15px 15px 15px 8px;
+}
+
+.advan1 img[src*="world"] {
+    margin: 13px 15px 0px 9px;
+}
+
+.ourAdvan .advan1 {
+    float: left;
+    width: 25%;
+}
+
+.ourAdvan .advan1 {
+    position: relative;
+}
+
+.typAdvan1 > span {
+    padding-top: 115px;
+    display: block;
+}
+
+.typAdvan1 {
+    text-align: center;
+}
+
+.ourAdvan .advan1 > span {
+    background-color: #ffcd20;
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 105px;
+}
+
+
+.executives {
+    float: left;
+    width: 100%;
+    padding: 150px 0px 150px;
+}
+
+.exec1 {
+    float: left;
+    width: 50%;
+}
+
+.exec1 img {
+    padding-top: 115px;
+}
+
+.exec2 {
+    float: left;
+    width: 50%;
+}
+
+.employees {
+    margin: 75px 0px 150px;
+}
+
+.employees li {
+    float: left;
+    width: 33%;
+    height: 300px;
+    background-color: #f0f4f6;
+    vertical-align: top;
+
+}
+
+.employees li p {
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 40px 0px 0px 25px;
+}
+
+.textBlock4 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.employees ul {
+    position: relative;
+    display: block;
+}
+.typEmpl {
+    display: block;
+    padding: 40px 70px 0px 150px;
+}
+
+.employees ul li img {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.payColor {
 }
