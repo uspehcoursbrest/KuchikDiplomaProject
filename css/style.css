@@ -34,37 +34,28 @@ ul {
     clear: both;
 }
 
-.headerTable {
-    display: table;
-    margin-top: 15px;
+.headerLoc {
+    display: inline-block;
+    margin: 15px 0px 0px 150px;
 }
 
-.headerTable .item {
-    display: table-cell;
+.loginReg {
+    display: inline-block;
+    margin: 15px 0px 0px 85px;
 }
 
-.headerTable .roundClock.item {
-    width: 430px;
-}
-
-.headerTable .headerLoc.item {
-    width: 385px;
-}
-
-.headerTable .loginReg.item {
-    width: 245px;
-}
-
-.headerTable .lang.item {
-    width: 105px;
+.lang {
+    display: inline-block;
+    margin: 15px 0px 0px 60px;
 }
 
 
 header .roundClock {
+    display: inline-block;
     font-size: 17px;
     line-height: 24px;
     color: #a3a3a3;
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
 header [class*="icon"] {
@@ -104,10 +95,9 @@ header .loginReg a {
 .headerMenu {
     float: left;
     width: 65%;
-    padding-left: 25px;
 }
 
-header .logo span {
+.logo span {
     font-size: 13px;
     line-height: 15px;
     color: #b3b3b3;
@@ -119,14 +109,14 @@ header .logo span {
     margin-top: 10px;
 }
 
-header .logo .colorLogo1 {
+.logo .colorLogo1 {
     font-size: 38px;
     line-height: 15px;
     color: #191919;
     font-weight: 800;
 }
 
-header .logo .colorLogo2 {
+.logo .colorLogo2 {
     font-size: 38px;
     line-height: 15px;
     color: #00acf2;
@@ -134,20 +124,24 @@ header .logo .colorLogo2 {
 }
 
 .headerMenu {
-    margin: 75px -22px 0px;
+    margin: 75px 0px 0px;
 }
 
 .headerMenu li {
     display: inline-block;
-    padding: 0px 22px;
+}
+
+.headerMenu li + li {
+    margin-left: 50px;
 }
 
 .headerMenu a {
     font-size: 17px;
     color: #191919;
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: bold;
-    text-align: left;
+    text-align: right;
 }
 
 header [class*="icon"] {
@@ -1220,6 +1214,7 @@ footer .logo span {
     position: relative;
     display: block;
 }
+
 .typEmpl {
     display: block;
     padding: 40px 70px 0px 150px;
@@ -1231,5 +1226,86 @@ footer .logo span {
     top: 25px;
 }
 
-.payColor {
+.entrance {
+    float: left;
+    width: 100%;
 }
+
+.leftEntrance {
+    float: left;
+    width: 30%;
+    padding-left: 70px;
+}
+
+.imgEntrance {
+    float: left;
+    width: 70%;
+}
+
+.titleEntrance {
+    margin-top: 240px;
+}
+
+.leftEntrance .logo {
+    width: 100%;
+}
+
+.formEntrance {
+    margin-top: 130px;
+}
+
+.formEntrance .field input {
+    height: 40px;
+    width: 350px;
+}
+
+.btnEntr {
+    padding-top: 45px;
+}
+
+.btnEntr .btnColor3 {
+    width: 350px;
+    background: transparent;
+}
+
+.forgotPass {
+    margin-top: 65px;
+}
+
+.forgotPass > a:nth-child(1),
+.forgotPass > a:nth-child(2) {
+    display: block;
+    margin-bottom: 45px;
+}
+
+.forgotPass span {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 800;
+}
+
+.checkin {
+    float: left;
+    width: 100%;
+}
+
+.form1>label {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 30px;
+
+}
+
+.form1>label a {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 30px;
+    color: #00a9f1;
+}
+
+.form1 label {
+    display: inline-block;
+}
+
+
