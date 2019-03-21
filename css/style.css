@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -63,14 +65,33 @@ ul {
 
 .loginReg {
     display: inline-block;
-    margin: 15px 0px 0px 85px;
+    margin: 15px 0px 0px 70px;
 }
 
 .lang {
     display: inline-block;
-    margin: 15px 0px 0px 60px;
+    margin: 15px 0px 0px 30px;
+    position: relative;
 }
 
+.lang span {
+    padding-left: 5px;
+}
+
+header .lang:before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid #333333;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    margin-top: 0px;
+    transition: all 0.3s;
+}
 
 header .roundClock {
     display: inline-block;
@@ -238,7 +259,21 @@ header [class*="icon"] {
     background-position: 50% 50%;
     background-size: cover;
     padding: 150px 0px;
+    position: relative;
 }
+
+.aboutUs::before {
+    content: '';
+    display: block;
+    height: 88px;
+    width: 2px;
+    background-color: #54c6f6;
+    position: absolute;
+    bottom: 0;
+    left: 650px;
+}
+
+
 
 .logoCompany {
     float: left;
@@ -251,6 +286,18 @@ header [class*="icon"] {
     color: #191919;
     text-transform: uppercase;
     font-weight: 800;
+    position: relative;
+}
+
+.logoCompany .caption2::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #54c6f6;
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
 }
 
 .logoCompany h2 {
@@ -307,6 +354,21 @@ header [class*="icon"] {
     left: 0;
 }
 
+.stat .typesStat {
+    position: relative;
+}
+
+.stat .typesStat::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 55px;
+    background-color: #ffcd20;
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+
 .statistics span {
     font-size: 55px;
     line-height: 69px;
@@ -330,10 +392,10 @@ header [class*="icon"] {
 
 .statistics .textStat {
     font-size: 17px;
-    line-height: 69px;
     color: #191919;
     text-transform: uppercase;
     font-weight: 600;
+    padding-top: 15px;
 }
 
 .statistics [class*="icon"] {
@@ -353,6 +415,18 @@ header [class*="icon"] {
     background-position: 50% 50%;
     background-size: cover;
     padding: 150px 0px 185px;
+    position: relative;
+}
+
+.ourService::before {
+    content: '';
+    display: block;
+    height: 88px;
+    width: 2px;
+    background-color: #5f6e7e;
+    position: absolute;
+    top: 0;
+    left: 650px;
 }
 
 .leftServ {
@@ -579,6 +653,7 @@ header [class*="icon"] {
 .profit {
     background-repeat: no-repeat;
     padding: 160px 0px 140px;
+    background-position: left;
 }
 
 .leftCalc {
@@ -589,6 +664,26 @@ header [class*="icon"] {
 .rightCalc {
     float: left;
     width: 30%;
+}
+
+.conclus {
+    margin: 92px 0px 0px 513px;
+}
+
+.conclus span:first-child {
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #191919;
+}
+
+.conclus span:last-child {
+    font-size: 67px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #191919;
+    display: block;
+    margin: 10px 0px 0px -10px;
 }
 
 .form1 label {
@@ -729,9 +824,35 @@ header [class*="icon"] {
     font-weight: 800;
 }
 
+
+
 .guarantees h3 {
     color: #ffffff;
+    position: relative;
 }
+
+.guarantees .affProg h3::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+}
+
+.guarantees .depIns h3::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #ffcd20;
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+}
+
 
 .affProg {
     padding: 120px 130px 80px 0px;
@@ -775,6 +896,18 @@ header [class*="icon"] {
 .titleOurNews {
     text-align: center;
     padding-top: 150px;
+    position: relative;
+}
+
+.titleOurNews h3::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #ffcd20;
+    position: absolute;
+    bottom: -30px;
+    left: 540px;
 }
 
 .cardNews1 {
@@ -815,6 +948,18 @@ header [class*="icon"] {
 .titleRev h3 {
     color: #ffffff;
     text-align: center;
+    position: relative;
+}
+
+.titleRev h3::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #ffcd20;
+    position: absolute;
+    bottom: -30px;
+    left: 540px;
 }
 
 .slideRev {
@@ -847,6 +992,20 @@ header [class*="icon"] {
     font-weight: 300;
     color: #ffffff;
     text-align: center;
+}
+
+.geolocation .map {
+    position: relative;
+    height: 545px;
+    width: 100%;
+}
+
+.geolocation .map iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
 }
 
 .payments {
@@ -887,38 +1046,39 @@ footer h4 {
     display: table-row;
 }
 
+.footBlock2 .tab {
+    padding-top: 85px;
+}
+
 .footBlock1 .tab {
     display: table-cell;
+    position: relative;
+
 }
 
-.footMenu img {
-    width: 40px;
-    height: 40px;
-    margin: 0px 5px 10px 5px;
+.footBlock1>.tab::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 55px;
+    background-color: #ffcd20;
+    position: absolute;
+    top: 60px;
+    left: 0px;
 }
 
-.footMenu img[src*="train"] {
-    margin: 3px 5px 5px 7px;
+.tab .caption4 {
+    padding-bottom: 35px;
 }
 
-.footMenu img[src*="car"] {
-    margin: 3px 5px 5px 7px;
-}
 
-.footMenu img[src*="ship"] {
-    margin: 1px 10px 5px 5px;
-}
-
-.footMenu img[src*="aircraft"] {
-    margin: 3px 5px 5px 3px;
-}
 
 .footMenu li {
-    padding: 10px 0px;
+    padding: 8px 0px;
 }
 
 .footMenu li a {
-    margin: -10px 0px;
+    margin: -8px 10px -8px 0px;
 }
 
 .footMenu li a {
@@ -928,7 +1088,7 @@ footer h4 {
     font-weight: 700;
     color: #00acf2;
     text-decoration: none;
-    width: 180px;
+
 }
 
 .footMenu span {
@@ -938,7 +1098,10 @@ footer h4 {
     height: 50px;
     vertical-align: middle;
     text-align: center;
-    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    margin-right: 10px;
 }
 
 .link1 {
@@ -1109,6 +1272,18 @@ footer .logo span {
 .titleProv h3 {
     color: #ffffff;
     text-align: center;
+    position: relative;
+}
+
+.titleProv h3::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #ffcd20;
+    position: absolute;
+    bottom: -30px;
+    left: 540px;
 }
 
 .typService {
@@ -1140,6 +1315,12 @@ footer .logo span {
 
 .typService li a span {
     display: block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    margin-left: 105px;
 }
 
 .ourAdvantages {
@@ -1148,6 +1329,17 @@ footer .logo span {
 
 .titlAdvan {
     text-align: center;
+    position: relative;
+}
+.titlAdvan h3::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 81px;
+    background-color: #ffcd20;
+    position: absolute;
+    bottom: -30px;
+    left: 540px;
 }
 
 .ourAdvan {
@@ -1182,6 +1374,8 @@ footer .logo span {
     height: 70px;
     position: absolute;
     left: 105px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .executives {
@@ -1443,7 +1637,7 @@ footer .logo span {
 }
 
 .desc {
-    margin: 0px  -15px;
+    margin: 0px -15px;
     border: 2px solid #4a6173;
 }
 
@@ -1463,7 +1657,7 @@ footer .logo span {
     border: 2px solid #4a6173;
 }
 
-.lots1{
+.lots1 {
 
 }
 
