@@ -274,7 +274,6 @@ header [class*="icon"] {
 }
 
 
-
 .logoCompany {
     float: left;
     width: 50%;
@@ -745,7 +744,6 @@ header [class*="icon"] {
     padding: 145px 0px 170px;
 }
 
-
 .typAdv {
     float: left;
     width: 41%;
@@ -823,7 +821,6 @@ header [class*="icon"] {
     text-transform: uppercase;
     font-weight: 800;
 }
-
 
 
 .guarantees h3 {
@@ -1056,7 +1053,7 @@ footer h4 {
 
 }
 
-.footBlock1>.tab::before {
+.footBlock1 > .tab::before {
     content: '';
     display: block;
     height: 3px;
@@ -1070,7 +1067,6 @@ footer h4 {
 .tab .caption4 {
     padding-bottom: 35px;
 }
-
 
 
 .footMenu li {
@@ -1331,6 +1327,7 @@ footer .logo span {
     text-align: center;
     position: relative;
 }
+
 .titlAdvan h3::before {
     content: '';
     display: block;
@@ -1481,6 +1478,10 @@ footer .logo span {
 .formEntrance .field input {
     height: 40px;
     width: 350px;
+}
+
+.formEntrance label {
+    display: inline-block;
 }
 
 .btnEntr {
@@ -1637,7 +1638,7 @@ footer .logo span {
 }
 
 .desc {
-    margin: 0px -15px;
+    margin: 0px 0px;
     border: 2px solid #4a6173;
 }
 
@@ -1649,36 +1650,61 @@ footer .logo span {
     color: #ffcd20;
 }
 
+.leftDesc {
+    margin: 0px 0px 0px 30px;
+}
+
 .rightDesc .caption3 {
     color: #05a7e8;
 }
 
-.descLots {
-    border: 2px solid #4a6173;
+.rightDesc {
+    margin: 0px 30px 0px 0px;
 }
 
-.lots1 {
-
+.descLots {
+    border: 2px solid #4a6173;
+    margin: 0px 30px 30px;
 }
 
 .descLots .activeSlide {
-    margin: 0px;
+    margin: 30px 15px 30px;
 }
+
 
 .descLots .slideCard {
     float: left;
-    width: 33%;
+    width: 33.3333%;
+    padding: 0px 16px;
 }
 
-.descLots li {
+.menuLots1 li {
     display: inline-block;
     float: left;
     width: 33%;
     text-align: center;
-    padding: 0px 15px;
+    padding: 0px 30px;
 }
 
-.descLots li a {
+.menuLots1 li:nth-child(3) {
+    margin: 0px -17px;
+}
+
+.menuLots1 li a {
+     display: block;
+     text-decoration: none;
+     font-size: 19px;
+     font-weight: 800;
+     text-transform: uppercase;
+     color: #ffffff;
+     background-color: rgba(22, 33, 45, 0.66);
+     width: 335px;
+     height: 75px;
+     padding: 25px 0px;
+ }
+
+.menuLots1 li:nth-child(1) a,
+.menuLots1 li:nth-child(3) a {
     display: block;
     text-decoration: none;
     font-size: 19px;
@@ -1686,17 +1712,140 @@ footer .logo span {
     text-transform: uppercase;
     color: #ffffff;
     background-color: rgba(22, 33, 45, 0.66);
-    width: 360px;
+    width: 354px;
     height: 75px;
-    padding: 10px 0px;
+    padding: 25px 0px;
 }
 
 .lots1 .cardColor1,
 .lots1 .cardColor5 {
-    width: 160px;
+    width: 140px;
 }
 
 .lots1 .card .cardButt a {
-    width: 161px;
+    width: 142px;
     margin-top: 10px;
+}
+
+.contact {
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.contact .caption1 {
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    width: 415px;
+    margin: 0px 375px;
+}
+
+.usContact {
+    padding: 150px 0px;
+}
+
+.formContact {
+    float: left;
+    width: 50%;
+}
+
+.formContact .form1 .field:nth-child(1) input,
+.formContact .form1 .field:nth-child(2) input,
+.formContact .form1 .field:nth-child(3) input {
+    height: 40px;
+}
+
+.formContact .form1 .field:nth-child(3) input,
+.formContact .form1 .field:nth-child(4) textarea {
+    width: 570px;
+}
+
+.formContact .field button {
+    background-color: transparent;
+    display: block;
+    width: 570px;
+    margin-top: 45px;
+}
+
+.formContact .form1 .field:nth-child(1),
+.formContact .form1 .field:nth-child(2) {
+    display: inline-block;
+}
+
+.formContact .form1 .field:nth-child(2) {
+    margin-left: 30px;
+}
+
+.formContact .form1 .field:nth-child(1) input,
+.formContact .form1 .field:nth-child(2) input {
+    display: inline-block;
+    width: 268px;
+}
+
+.typesContact {
+    float: left;
+    width: 50%;
+
+}
+
+.typesContact .cont1 {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.cont2 {
+    padding: 20px;
+    width: 100%;
+}
+
+.contacts {
+    background-color: #f0f4f6;
+    text-align: center;
+    height: 210px;
+    padding: 25px 25px 0px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.contacts .caption5 {
+    display: block;
+    padding-top: 85px;
+}
+
+.contacts  span[style*="background"] {
+    display: block;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 35px;
+    left: 92px;
+}
+
+.cont2 .contacts span[style*="world"] {
+    display: block;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+.cont2 .contacts span[style*="clock1"] {
+    display: block;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 35px;
+    left: 100px;
 }

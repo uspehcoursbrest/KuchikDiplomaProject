@@ -51,73 +51,96 @@
     </div>
 </header>
 <div class="content">
-    <div class="contact">
-        <div class="titleContact">
-            <h1>контакты</h1>
-        </div>
-        <div class="bredcrumds">
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li>Контакты</li>
-            </ul>
+    <div class="contact" style="background-image: url(img/jpg/contact.jpg)">
+        <div class="container">
+            <div class="titleContact">
+                <h1 class="caption1">контакты</h1>
+            </div>
+            <div class="bredcrumds">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li>></li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="usContact">
-        <div class="formContact">
-            <form action="#" class="form1">
-                <div class="yourName">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="yourEmail">
-                    <label for="email">Ваш E-mail</label>
-                    <input type="text" name="email" id="email">
-                    <div class="subMes">
+        <div class="container clear">
+            <div class="formContact">
+                <form action="#" class="form1">
+                    <div class="field">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="field">
+                        <label for="email">Ваш E-mail</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="field">
                         <label for="mess">Тема сообщения</label>
                         <input type="text" name="mess" id="mess">
                     </div>
-                    <div class="textMess">
+                    <div class="field">
                         <label for="textMess">Текст сообщения</label>
                         <textarea name="textMess" id="textMess" cols="30" rows="10"></textarea>
                     </div>
-                    <div class="btnMess">
+                    <div class="field">
                         <button class="btnColor3">отправить сообщение</button>
                     </div>
+                </form>
+            </div>
+            <div class="typesContact clear">
+                <div class="cont1 clear">
+                    <div class="cont2">
+                        <div class="contacts">
+                            <span style="background-image: url(img/png/world2.png)"></span>
+                            <span class="caption5">наш адрес:</span>
+                            <a href="#" class="link1">San Francisco, CA 94102, US, 1234 Some St</a>
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <div class="contacts">
+                            <span style="background-image: url(img/png/phone.png)"></span>
+                            <span class="caption5">телефоны:</span>
+                            <a href="#" class="link1">+8 356 123-456-349</a>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        </div>
-        <div class="typesContact">
-            <div class="contacts">
-                <img src="img/png/world2.png" alt="">
-                <span class="caption5">наш адрес:</span>
-                <a href="#" class="link1">San Francisco, CA 94102, US, 1234 Some St</a>
-            </div>
-            <div class="contacts">
-                <img src="img/png/phone.png" alt="">
-                <span class="caption5">телефоны:</span>
-                <a href="#" class="link1">+8 356 123-456-349</a>
-            </div>
-            <div class="contacts">
-                <img src="" alt=""><span class="icon-clock"></span>
-                <span class="caption5">время работы:</span>
-                <span>24/7 Professional Logistics Service</span>
-            </div>
-            <div class="contacts">
-                <img src="img/png/mess.png" alt="">
-                <span class="caption5">E-mail:</span>
-                <a href="#" class="link1">smartlog@demolink.org</a>
+
+                <div class="cont1 clear">
+                    <div class="cont2">
+                        <div class="contacts">
+                            <span style="background-image: url(img/png/clock1.png)"></span>
+                            <span class="caption5">время работы:</span>
+                            <span class="link1">24/7 Professional Logistics Service</span>
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <div class="contacts">
+                            <span style="background-image: url(img/png/mess.png)"></span>
+                            <span class="caption5">E-mail:</span>
+                            <a href="#" class="link1">smartlog@demolink.org</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="geolocation">
+</div>
+<div class="geolocation">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39218.958415932095!2d23.7191168!3d52.0945664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1553195334950"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="payments">
-        <div class="container">
-            <div class="pay">
-                <img src="" alt="">
-            </div>
+</div>
+<div class="payments payColor">
+    <div class="container">
+        <div class="pay">
+            <img src="img/png/pay.png" alt="pay">
         </div>
     </div>
+</div>
 </div>
 <footer>
     <div class="container">
@@ -137,16 +160,20 @@
                     <li>
                         <ul>
                             <li>
-                                <a href="#"><span style="background-image: url(img/png/ship.png)"></span>Ocean shipping</a>
-                                <a href="#"><span style="background-image: url(img/png/car.png)"></span>Railway shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/ship.png)"></span>Ocean
+                                    shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/car.png)"></span>Railway
+                                    shipping</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <ul>
                             <li>
-                                <a href="#"><span style="background-image: url(img/png/train.png)"></span>Truck shipping</a>
-                                <a href="#"><span style="background-image: url(img/png/aircraft.png)"></span>Air Shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/train.png)"></span>Truck
+                                    shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/aircraft.png)"></span>Air
+                                    Shipping</a>
                             </li>
                         </ul>
                     </li>
