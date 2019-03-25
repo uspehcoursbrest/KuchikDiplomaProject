@@ -130,6 +130,8 @@ header .loginReg a {
     font-size: 15px;
     line-height: 24px;
     color: #00acf2;
+    text-transform: uppercase;
+    font-weight: 800;
     text-decoration: none;
     padding-right: 20px;
 }
@@ -153,6 +155,15 @@ header .loginReg a {
     float: left;
     width: 65%;
 }
+
+.headerMenu li:active {
+    border-bottom: 3px solid #22b7f4;
+}
+
+.headerMenu li a:active {
+    color: #22b7f4;
+}
+
 
 .logo span {
     font-size: 13px;
@@ -186,6 +197,36 @@ header .loginReg a {
 
 .headerMenu li {
     display: inline-block;
+    height: 80px;
+}
+
+.roundClock .icon-clock1 {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    margin-right: 10px;
+    border: 2px solid #282828;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+.roundClock .icon-clock1:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    left: 5px;
+    top: 5px;
+    background: #282828;
+    animation: timing 30s infinite steps(60);
+    transform-origin: 0 0;
+}
+
+@keyframes timing {
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .headerMenu li + li {
@@ -240,6 +281,21 @@ header [class*="icon"] {
 
 .company {
     padding-top: 230px;
+    position: relative;
+}
+
+.companySlider::before {
+    content: '';
+    display: block;
+    height: 234px;
+    width: 657px;
+    background-image: url(../img/png/borderAboutUs.png);
+    bacbackground-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 245px;
+    left: 255px;
+    z-index: 0;
 }
 
 .compSlider {
@@ -257,6 +313,7 @@ header [class*="icon"] {
 }
 
 .company a {
+    position: relative;
     font-size: 21px;
     line-height: 55px;
     color: #ffffff;
@@ -266,13 +323,14 @@ header [class*="icon"] {
     width: 270px;
     background-color: #00acf2;
     text-decoration: none;
-    margin: 60px 0px 185px;
+    margin: 40px 0px 185px;
+    z-index: 1;
 }
 
 .aboutUs {
     background-position: 50% 50%;
     background-size: cover;
-    padding: 150px 0px;
+    padding: 120px 0px 120px;
     position: relative;
 }
 
@@ -290,7 +348,7 @@ header [class*="icon"] {
 
 .logoCompany {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 .logoCompany .caption2 {
@@ -343,7 +401,8 @@ header [class*="icon"] {
 
 .infoCompany {
     float: left;
-    width: 50%;
+    width: 60%;
+    padding: 10px;
 }
 
 .infoCompany a {
@@ -352,7 +411,7 @@ header [class*="icon"] {
 }
 
 .statistics {
-    padding: 130px 0px;
+    padding: 130px 0px 100px;
 }
 
 .typesStat {
@@ -427,7 +486,7 @@ header [class*="icon"] {
 .ourService {
     background-position: 50% 50%;
     background-size: cover;
-    padding: 150px 0px 185px;
+    padding: 135px 0px 175px;
     position: relative;
 }
 
@@ -457,12 +516,12 @@ header [class*="icon"] {
 }
 
 .typServ {
-    margin-top: 95px;
+    margin-top: 80px;
 }
 
 .menuServ span {
     display: inline-block;
-    background-color: rgba(30, 51, 70, 0.77);
+
     width: 70px;
     height: 72px;
     background-size: 40px;
@@ -475,9 +534,10 @@ header [class*="icon"] {
     font-weight: 800;
     text-transform: uppercase;
     padding-bottom: 20px;
+    position: relative;
 }
 
-.menuServ li a {
+.menuServ li a + a {
     font-size: 23px;
     line-height: 70px;
     text-decoration: none;
@@ -486,6 +546,26 @@ header [class*="icon"] {
     border: 1px solid #4f6275;
     width: 320px;
     text-align: center;
+    margin-left: 70px;
+}
+
+.menuServ li a[style*="image"] {
+    display: block;
+    height: 72px;
+    width: 70px;
+    background-color: rgba(30, 51, 70, 0.77);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    position: absolute;
+    background-position: center;
+}
+
+.servHov a:hover {
+    color: #ffcd20;
+}
+
+.servHov a[style*="image"]:hover {
+    background-color: #ffcd20;
 }
 
 .nameServ h2 {
@@ -493,7 +573,7 @@ header [class*="icon"] {
 }
 
 .nameServ p {
-    margin-top: 55px;
+    margin-top: 35px;
 }
 
 .caption3 {
@@ -504,7 +584,7 @@ header [class*="icon"] {
 }
 
 .nameAct .titleAct {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .nameAct h3 {
@@ -512,7 +592,7 @@ header [class*="icon"] {
 }
 
 .activeSlide {
-    margin: 60px -15px 0px;
+    margin: 40px -15px 0px;
 }
 
 .slideCard {
@@ -531,8 +611,6 @@ header [class*="icon"] {
     padding-right: 10px;
     color: #000000;
 }
-
-
 
 .card .icon-precent {
     padding-right: 10px;
@@ -681,7 +759,7 @@ header [class*="icon"] {
 
 .profit {
     background-repeat: no-repeat;
-    padding: 160px 0px 140px;
+    padding: 160px 0px 180px;
     background-position: left;
 }
 
@@ -769,13 +847,13 @@ header [class*="icon"] {
 .advantages {
     background-position: 50% 50%;
     background-size: cover;
-    padding: 145px 0px 170px;
+    padding: 145px 0px 110px;
 }
 
 .typAdv {
     float: left;
     width: 41%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .typAdv.adv:last-child > span {
@@ -784,7 +862,7 @@ header [class*="icon"] {
 
 
 .adv {
-    margin: 0px 50px 65px 0px;
+    padding: 0px 30px 65px 0px;
     position: relative;
 }
 
@@ -808,6 +886,11 @@ header [class*="icon"] {
 .typ2 > span {
     display: block;
     padding-left: 90px;
+}
+
+.typ2 .textBlock2 {
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .caption5 {
@@ -877,27 +960,27 @@ header [class*="icon"] {
 
 
 .affProg {
-    padding: 120px 130px 80px 0px;
+    padding: 85px 130px 80px 0px;
 }
 
 .affProg p {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .affProg a {
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .depIns {
-    padding: 120px 40px 80px 0px;
+    padding: 85px 40px 80px 0px;
 }
 
 .depIns p {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .depIns a {
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 
@@ -910,14 +993,13 @@ header [class*="icon"] {
 }
 
 .ourNews {
-
     background-position: 50% 50%;
     background-size: cover;
 }
 
 .titleOurNews {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 130px;
     position: relative;
 }
 
@@ -934,7 +1016,7 @@ header [class*="icon"] {
 
 .cardNews1 {
     float: left;
-    width: 33%;
+    width: 33.33333%;
     padding-top: 90px;
 }
 
@@ -949,7 +1031,7 @@ header [class*="icon"] {
 .cardNews1 img {
     width: 365px;
     height: 200px;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .allNews {
@@ -958,11 +1040,11 @@ header [class*="icon"] {
 
 .allNews a {
     width: 205px;
-    margin: 120px 0px;
+    margin: 90px 0px;
 }
 
 .reviews {
-    padding: 150px 0px 125px 0px;
+    padding: 150px 0px 100px 0px;
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -985,12 +1067,12 @@ header [class*="icon"] {
 }
 
 .slideRev {
-    margin-top: 125px;
+    margin-top: 110px;
     text-align: center;
 }
 
 .client {
-    padding-top: 65px;
+    padding-top: 60px;
 }
 
 .client span {
@@ -1036,7 +1118,7 @@ header [class*="icon"] {
 
 footer {
     background-color: #0a1826;
-    padding: 120px 0px 70px;
+    padding: 80px 0px 70px;
 }
 
 .caption4 {
@@ -1445,6 +1527,19 @@ footer .logo span {
     height: 300px;
     vertical-align: top;
     background-color: #f0f4f6;
+    position: relative;
+}
+
+.empl::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/png/empl.png);
+    background-repeat: no-repeat;
+    right: 30px;
+    bottom: 0;
 }
 
 .employees p {
