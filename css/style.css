@@ -156,15 +156,6 @@ header .loginReg a {
     width: 65%;
 }
 
-.headerMenu li:active {
-    border-bottom: 3px solid #22b7f4;
-}
-
-.headerMenu li a:active {
-    color: #22b7f4;
-}
-
-
 .logo span {
     font-size: 13px;
     line-height: 15px;
@@ -234,12 +225,15 @@ header .loginReg a {
 }
 
 .headerMenu a {
+    cursor: pointer;
     font-size: 17px;
     color: #191919;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     text-align: right;
+    display: block;
+    height: 100%;
 }
 
 header [class*="icon"] {
@@ -560,11 +554,11 @@ header [class*="icon"] {
     background-position: center;
 }
 
-.servHov a:hover {
+.menuServ li:hover a {
     color: #ffcd20;
 }
 
-.servHov a[style*="image"]:hover {
+.menuServ li:hover a[style*="image"] {
     background-color: #ffcd20;
 }
 
@@ -775,7 +769,7 @@ header [class*="icon"] {
 }
 
 .conclus {
-    margin: 95px 0px 0px 590px;
+    margin: 115px 0px 0px 590px;
 }
 
 .conclus span:first-child {
@@ -2049,6 +2043,64 @@ footer .logo span {
     font-weight: 800;
     font-size: 19px;
     color: #495256;
+}
 
+header.mobile {
+    display: none;
+    position: relative;
+    padding: 18px 0;
+}
 
+.mobileWrap {
+    display: table;
+    width: 100%;
+}
+
+.menuMobile {
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+}
+
+.logMenuMobile {
+    display: table-cell;
+    width: 75%;
+
+}
+
+.menuMobile {
+    cursor: pointer;
+}
+
+.menuMobile span {
+    display: block;
+    margin-bottom: 7px;
+    height: 5px;
+    width: 45px;
+    background-color: #00acf2;
+    border-radius: 2px;
+}
+
+.menuDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+.logMenuMobile .colorLogo1 {
+    font-size: 25px;
+    line-height: 15px;
+    color: #191919;
+    font-weight: 800;
+}
+
+.logMenuMobile .colorLogo2 {
+    font-size: 25px;
+    line-height: 15px;
+    color: #00acf2;
+    font-weight: 800;
 }

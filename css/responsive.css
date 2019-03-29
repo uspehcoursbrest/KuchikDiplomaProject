@@ -1,0 +1,435 @@
+@media (max-width: 1199px) {
+
+    .container {
+        width: 950px;
+    }
+
+    .headerLoc {
+        float: right;
+        margin: 15px 0px 0px 150px;
+    }
+
+    header .roundClock {
+        float: left;
+        padding: 15px 0px 0px;
+    }
+
+    .loginReg {
+        float: left;
+        margin: 15px 0px 0px;
+    }
+
+    .lang {
+        float: right;
+        margin: 15px 15px 0px 0px;
+    }
+
+    .headerMenu {
+        text-align: center;
+    }
+
+    .headerMenu li + li {
+        margin-left: 23px;
+    }
+
+    .companySlider::before {
+        left: 130px;
+    }
+
+    .infoCompany {
+        padding: 5px;
+    }
+
+    .logoCompany .caption2 {
+        font-size: 50px;
+    }
+
+    .logoCompany h2 {
+        font-size: 85px;
+    }
+
+    .textBlock1 {
+        font-size: 15px;
+    }
+
+    .statistics span {
+        font-size: 45px;
+    }
+
+    .menuServ li a + a {
+        width: 230px;
+    }
+
+    .nameServ p {
+        margin-top: 130px;
+    }
+
+    .nameAct {
+        display: none;
+    }
+
+    .profit {
+        display: none;
+    }
+
+    .caption6 {
+        font-size: 30px;
+    }
+
+    .cardNews1 img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .titleOurNews h3::before {
+        left: 420px;
+    }
+
+    .titleRev h3::before {
+        left: 420px;
+    }
+
+    .payments {
+        padding: 90px 0px;
+    }
+
+    .pay img {
+        width: 900px;
+    }
+
+    .footMenu li {
+        padding: 0;
+    }
+
+    .footMenu li a {
+        margin: 0;
+    }
+
+    .link2 {
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container {
+        width: 750px;
+    }
+
+    .headerLoc {
+        float: right;
+        margin: 15px 0px 0px 120px;
+    }
+
+    header .roundClock {
+        float: left;
+        padding: 15px 0px 0px;
+    }
+
+    .loginReg {
+        float: left;
+        margin: 15px 0px 0px;
+    }
+
+    .lang {
+        float: right;
+        margin: 15px 15px 0px 0px;
+    }
+
+    .headerMenu {
+        text-align: center;
+    }
+
+    .headerMenu li + li {
+        margin-left: 43px;
+    }
+
+    .headerMenu li {
+        height: 65px;
+    }
+
+    .companySlider::before {
+        left: 30px;
+    }
+
+    .logoCompany .caption2 {
+        font-size: 40px;
+    }
+
+    .logoCompany h2 {
+        font-size: 65px;
+    }
+
+    .statistics span {
+        font-size: 35px;
+    }
+
+    .menuServ li a + a {
+        width: 200px;
+    }
+
+    .menuServ li {
+        padding-bottom: 10px;
+    }
+
+    .typAdv:last-child .adv:first-child {
+        min-height: 211px;
+    }
+
+    .affProg {
+        padding: 85px 85px 80px 0px;
+    }
+
+    .depIns {
+        padding: 85px 0px 80px 0px;
+    }
+
+    .cardNews1 img {
+        width: 230px;
+        height: 150px;
+    }
+
+    .titleOurNews h3::before {
+        left: 320px;
+    }
+
+    .cardNews1 p {
+        font-size: 14px;
+    }
+
+    .titleRev h3::before {
+        left: 320px;
+    }
+
+    .reviews .textBlock1 {
+        font-size: 14px;
+    }
+
+    .payments {
+        padding: 60px 0px;
+    }
+
+    .pay img {
+        width: 700px;
+    }
+
+    .link2 {
+        line-height: 70px;
+        font-size: 16px;
+    }
+
+    .footCont span {
+        font-size: 16px;
+    }
+
+    .textBlock3 {
+        font-size: 14px;
+    }
+
+    .social [class*=icon] {
+        padding-right: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header.mobile {
+        display: block;
+    }
+
+    header,
+    .statistics,
+    .profit,
+    .guarantees,
+    .advantages,
+    .reviews,
+    .geolocation,
+    .payments {
+        display: none;
+    }
+
+    .logoSlider {
+        background-size: cover;
+        background-position: center;
+        text-align: left;
+        padding: 40px 0;
+    }
+
+    .companySlider > span {
+        display: none;
+    }
+
+    .companySlider .compSlider span {
+        font-size: 30px;
+    }
+
+    .companySlider h1 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .companySlider::before {
+        display: none;
+    }
+
+    .company {
+        padding: 0;
+        text-align: center;
+    }
+
+    .company .companySlider a {
+        margin: 20px 0;
+        line-height: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutUs {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .logoCompany h2 {
+        margin-top: 20px;
+    }
+
+    .logoCompany .caption2 {
+        line-height: 30px;
+        margin-left: 30px;
+    }
+
+    .logoCompany,
+    .infoCompany {
+        float: none;
+        width: 100%;
+    }
+
+    .logoCompany .caption2,
+    .logoCompany h2{
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .logoCompany .caption2::before {
+        display: none;
+    }
+
+    .infoCompany .textBlock1 {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .infoCompany .btnColor2 {
+        margin-top: 20px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+
+    .ourService .rightServ {
+        display: none;
+    }
+
+    .ourService {
+        padding: 40px 20px;
+    }
+
+    .leftServ {
+        width: 100%;
+        float: none;
+    }
+
+    .ourService .titleServ .caption2 {
+        font-size: 30px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .typServ {
+        margin-top: 10px;
+    }
+
+    .menuServ li a[style*="image"] {
+        display: none;
+    }
+
+    .menuServ li a + a {
+        width: 220px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    .ourNews {
+        padding: 40px 0;
+    }
+
+    .titleOurNews {
+        padding: 0;
+    }
+
+    .titleOurNews .caption6 {
+        line-height: 30px;
+    }
+
+    .titleOurNews h3::before {
+        display: none;
+    }
+
+    .ourNew .cardNews1 {
+        float: none;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .cardNews1 img {
+        width: 395px;
+        height: 170px;
+    }
+
+    .allNews a {
+        width: 205px;
+        margin: 30px 0px;
+    }
+
+    .allNews .btnColor3 {
+        width: 180px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .footBlock1 .tab {
+        display: block;
+    }
+
+    .footBlock1 .footServ,
+    .footBlock1 .footCom,
+    .footBlock1 > .tab::before {
+        display: none;
+    }
+
+    .footBlock1 {
+        text-align: center;
+    }
+
+    .footBlock2 .footLogo {
+        display: none;
+    }
+
+    .link2 {
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .footBlock2 .tab {
+        padding-top: 30px;
+    }
+}
