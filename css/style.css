@@ -223,6 +223,11 @@ header .loginReg a {
 .headerMenu li + li {
     margin-left: 50px;
 }
+.headerMenu .active {
+    border-bottom: 3px solid #00acf2;
+    color: #00acf2;
+}
+
 
 .headerMenu a {
     cursor: pointer;
@@ -321,6 +326,11 @@ header [class*="icon"] {
     z-index: 1;
 }
 
+.company a:hover {
+    opacity: 1;
+    background-color: #ffcd20;
+}
+
 .aboutUs {
     background-position: 50% 50%;
     background-size: cover;
@@ -391,6 +401,11 @@ header [class*="icon"] {
     text-decoration: none;
     text-align: center;
     border: 3px solid #ffffff;
+}
+
+.btnColor2:hover {
+    color: #ffcd20;
+    opacity: 1;
 }
 
 .infoCompany {
@@ -515,7 +530,6 @@ header [class*="icon"] {
 
 .menuServ span {
     display: inline-block;
-
     width: 70px;
     height: 72px;
     background-size: 40px;
@@ -556,6 +570,7 @@ header [class*="icon"] {
 
 .menuServ li:hover a {
     color: #ffcd20;
+    opacity: 1;
 }
 
 .menuServ li:hover a[style*="image"] {
@@ -730,6 +745,12 @@ header [class*="icon"] {
     border: 3px solid #00adf1;
 }
 
+.btnColor3:hover {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    opacity: 1;
+}
+
 .btnColor4 {
     font-size: 19px;
     line-height: 55px;
@@ -740,6 +761,12 @@ header [class*="icon"] {
     color: #ffcd20;
     text-align: center;
     border: 3px solid #ffcd20;
+}
+
+.btnColor4:hover {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    opacity: 1;
 }
 
 .card .cardButt a {
@@ -836,6 +863,12 @@ header [class*="icon"] {
     color: #00adf1;
     width: 100%;
     margin-top: 45px;
+}
+
+.invest a:hover {
+    border: 3px solid #ffcd20;
+    color: #ffcd20;
+    opacity: 1;
 }
 
 .advantages {
@@ -982,6 +1015,11 @@ header [class*="icon"] {
     width: 165px;
 }
 
+.leftGuar .btnColor2:hover {
+    color: #ffcd20;
+    border: 3px solid #ffcd20;
+}
+
 .rightGuar .btnColor4 {
     width: 165px;
 }
@@ -1035,6 +1073,12 @@ header [class*="icon"] {
 .allNews a {
     width: 205px;
     margin: 90px 0px;
+}
+
+.allNews a:hover {
+    border: 3px solid #ffcd20;
+    color: #ffcd20;
+    opacity: 1;
 }
 
 .reviews {
@@ -1414,6 +1458,11 @@ footer .logo span {
     padding-top: 50px;
 }
 
+.typService li a:hover {
+    color: #ffcd20;
+    opacity: 1;
+}
+
 .typService li a span {
     display: block;
     width: 50px;
@@ -1583,6 +1632,9 @@ footer .logo span {
 .imgEntrance {
     float: left;
     width: 70%;
+    height: 1140px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .titleEntrance {
@@ -1599,11 +1651,12 @@ footer .logo span {
 
 .formEntrance .field input {
     height: 40px;
-    width: 350px;
+    width: 310px;
 }
 
-.formEntrance label {
+.formEntrance .form1 > label {
     display: inline-block;
+    font-size: 11px;
 }
 
 .btnEntr {
@@ -1611,8 +1664,14 @@ footer .logo span {
 }
 
 .btnEntr .btnColor3 {
-    width: 350px;
+    width: 310px;
     background: transparent;
+    font-weight: 600;
+}
+
+.btnEntr .btnColor3:hover {
+    border: 3px solid #ffcd20;
+    color: #ffcd20;
 }
 
 .forgotPass {
@@ -1751,8 +1810,23 @@ footer .logo span {
     background-color: rgba(22, 33, 45, 0.66);
     width: 270px;
     height: 75px;
-    padding: 10px 0px;
+    padding: 25px 0px;
+    position: relative;
 }
+
+.menuLots li a span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+
 
 .descript {
     float: left;
@@ -1893,6 +1967,12 @@ footer .logo span {
     margin-top: 45px;
 }
 
+.formContact .field button:hover {
+    border: 3px solid #ffcd20;
+    color: #ffcd20;
+    opacity: 1;
+}
+
 .formContact .form1 .field:nth-child(1),
 .formContact .form1 .field:nth-child(2) {
     display: inline-block;
@@ -2019,6 +2099,11 @@ footer .logo span {
     line-height: 40px;
 }
 
+.cardNews3 .btnColor3:hover {
+    border: 3px solid #ffcd20;
+    color: #ffcd20;
+}
+
 .pagination {
     text-align: center;
     margin-top: 110px;
@@ -2065,7 +2150,7 @@ header.mobile {
 .logMenuMobile {
     display: table-cell;
     width: 75%;
-
+    text-align: right;
 }
 
 .menuMobile {
