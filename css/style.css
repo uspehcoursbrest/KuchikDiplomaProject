@@ -115,6 +115,26 @@ header .roundClock {
     padding-left: 22px;
 }
 
+/*header .clock {*/
+    /*padding: 0 10px;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*header .date {*/
+    /*display: inline-block;*/
+    /*font-size: 14px;*/
+    /*line-height: 30px;*/
+    /*color: #bec6d1;*/
+/*}*/
+
+/*header .time {*/
+    /*display: inline-block;*/
+    /*font-size: 32px;*/
+    /*font-weight: 800;*/
+    /*line-height: 30px;*/
+    /*padding-left: 10px;*/
+/*}*/
+
 header [class*="icon"] {
     padding-right: 10px;
 }
@@ -781,22 +801,23 @@ header [class*="icon"] {
 .profit {
     background-repeat: no-repeat;
     padding: 160px 0px 180px;
-    background-position: left;
+    background-position-y: 175px;
+    background-position-x: -90px;
 }
 
 .leftCalc {
     float: left;
-    width: 70%;
+    width: 60%;
 }
 
 .rightCalc {
     float: left;
-    width: 30%;
+    width: 40%;
     padding-left: 60px;
 }
 
 .conclus {
-    margin: 115px 0px 0px 590px;
+    margin: 52px 0px 0px 500px;
 }
 
 .conclus span:first-child {
@@ -839,6 +860,16 @@ header [class*="icon"] {
 .formCalc .field input {
     width: 100%;
     height: 40px;
+}
+
+.formCalc .field:first-child span + span {
+    margin-left: 39px;
+}
+
+.formCalc .field:first-child a {
+    display: block;
+    width: 70px;
+    height: 70px;
 }
 
 .rightCalc .field:nth-child(2) span,
