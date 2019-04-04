@@ -7,12 +7,17 @@
 
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src='js/script.js'></script>
+    <script type='text/javascript' src="js/owl.carousel.min.js"></script>
+    <script type='text/javascript' src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="bodyWrap">
@@ -46,13 +51,13 @@
                 <span><span class="icon-clock1"></span>24/7 Professional Logistics Service</span>
             </div>
             <!--<div class="clock">-->
-                <!--<span class="date" id="date">-->
-									<!--25 Фев 2018-->
-								<!--</span>-->
+            <!--<span class="date" id="date">-->
+            <!--25 Фев 2018-->
+            <!--</span>-->
             <!--<span class="time" id="time">-->
-									<!--20:35:16-->
-								<!--</span>-->
-        <!--</div>-->
+            <!--20:35:16-->
+            <!--</span>-->
+            <!--</div>-->
             <div class="headerLoc">
                 <a href="#" class="link1"><span class="icon-world1"></span>San Francisco, CA 94102, US, 1234 Some St</a>
             </div>
@@ -60,9 +65,11 @@
                 <a href="entrance.html"><span class="icon-user1"></span>Вход</a>
                 <a href="checkin.html"><span class="icon-sheet"></span>Регистрация</a>
             </div>
-            <div class="lang notActive">
+            <div class="lang">
                 <img src="img/jpg/lang.jpg" alt="">
-                <span>Русский</span>
+                <span class="title activ">Русский</span>
+                <!--<span class="title">English</span>-->
+                <!--<span class="title">France</span>-->
             </div>
 
             <div class="logMenu clear">
@@ -89,7 +96,16 @@
         </div>
     </header>
     <div class="content">
-        <div class="logoSlider" style="background-image: url(img/jpg/backLogo.jpg)">
+        <div class="logoSlider">
+            <div class="slider">
+                <div class="slides owl-carousel owl-theme">
+                    <div class="item" style="background-image: url(img/jpg/backLogo1.jpg)"></div>
+                    <div class="item" style="background-image: url(img/jpg/backLogo2.jpg)"></div>
+                    <div class="item" style="background-image: url(img/jpg/backLogo3.jpg)"></div>
+                    <div class="item" style="background-image: url(img/jpg/backLogo4.jpg)"></div>
+                </div>
+                <div class="dots"></div>
+            </div>
             <div class="container">
                 <div class="company">
                     <div class="companySlider">
@@ -162,110 +178,553 @@
                     <div class="titleServ">
                         <h2 class="caption2">наши<br>сервисы</h2>
                     </div>
-                    <div class="typServ">
-                        <ul class="menuServ">
+                    <div class="typServ" id="tabs">
+                        <ul class="tabs">
                             <li>
-                                <a href="" style="background-image: url(img/png/car.png)"></a><a href="">название
-                                сервиса</a>
+                                <a href="#tabs-1" style="background-image: url(img/png/car.png)"><a href="#tabs-1">название
+                                    сервиса</a></a>
                             </li>
                             <li>
-                                <a href="" style="background-image: url(img/png/train.png)"></a><a href="">название
-                                сервиса</a>
+                                <a href="#tabs-2" style="background-image: url(img/png/train.png)"><a href="#tabs-2">название
+                                    сервиса</a></a>
                             </li>
                             <li>
-                                <a href="" style="background-image: url(img/png/aircraft.png)"></a><a href="">название
-                                сервиса</a>
+                                <a href="#tabs-3" style="background-image: url(img/png/aircraft.png)"><a href="#tabs-3">название
+                                    сервиса</a></a>
                             </li>
                             <li>
-                                <a href="" style="background-image: url(img/png/ship.png)"></a><a href="">название
-                                сервиса</a>
+                                <a href="#tabs-4" style="background-image: url(img/png/ship.png)"><a href="#tabs-4">название
+                                    сервиса</a></a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="rightServ">
-                    <div class="nameServ">
-                        <h2 class="caption2">название сервиса</h2>
-                        <p class="textBlock1">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                            мешает
-                            сосредоточиться. Lorem
-                            Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
-                            шаблона, а
-                            также реальное распределение букв. </p>
-                    </div>
-                    <div class="nameAct">
-                        <div class="titleAct">
-                            <h3 class="caption3">активные лоты:</h3>
-                        </div>
-                        <div class="activeSlide clear">
-                            <div class="slideCard">
-                                <div class="card">
+                        <div class="tabContent" id="tabs-1">
+                            <div class="rightServ">
+                                <div class="nameServ">
+                                    <h2 class="caption2">название сервиса</h2>
+                                    <p class="textBlock1">Давно выяснено, что при оценке дизайна и композиции читаемый
+                                        текст
+                                        мешает
+                                        сосредоточиться. Lorem
+                                        Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                                        заполнение
+                                        шаблона, а
+                                        также реальное распределение букв. </p>
+                                </div>
+                                <div class="nameAct">
+                                    <div class="titleAct">
+                                        <h3 class="caption3">активные лоты:</h3>
+                                    </div>
+                                    <div class="activeSlide clear owl-carousel">
+                                        <div class="slideCard">
+                                            <div class="card">
                                     <span class="cardColor1"><span class="icon-clock1"></span>05<span
                                             class="cardColor6">20:22:57</span></span>
-                                    <span class="cardColor5"><span class="cardColor4">сумма:</span>     2370.00</span>
-                                    <img src="img/jpg/card1.jpg" alt="">
-                                    <div class="menuCard">
-                                        <div class="liCard">
-                                            <span style="background-image: url(img/png/location.png)"></span><img
-                                                src="img/png/location.png" alt=""><span class="cardColor2">Пункт отбытия:</span>
-                                            <span class="cardColor3">Анкара</span>
-                                        </div>
-                                        <div class="liCard">
-                                            <img src="img/png/location.png" alt="">
-                                            <span class="cardColor2">Пункт прибытия:</span>
-                                            <span class="cardColor3">Стамбул</span>
-                                        </div>
-                                        <div class="menuCard1">
-                                            <div class="liCard">
-                                                <span class="icon-clock1"></span>
-                                                <span class="cardColor2">Время доставки</span>
-                                                <span class="cardColor3">05  20:22:57</span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
                                             </div>
-                                            <div class="liCard">
-                                                <span class="icon-precent"></span>
-                                                <span class="cardColor2">Прибыль в день</span>
-                                                <span class="cardColor3">2.5%</span>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="cardButt">
-                                        <a href="#" class="btnColor3">инвестировать</a>
-                                        <a href="#" class="btnColor4">подробнее</a>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slideCard clear">
-                                <div class="card">
+                        </div>
+                        <div class="tabContent" id="tabs-2">
+                            <div class="rightServ">
+                                <div class="nameServ">
+                                    <h2 class="caption2">название сервиса</h2>
+                                    <p class="textBlock1">Давно выяснено, что при оценке дизайна и композиции читаемый
+                                        текст
+                                        мешает
+                                        сосредоточиться. Lorem
+                                        Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                                        заполнение
+                                        шаблона, а
+                                        также реальное распределение букв. </p>
+                                </div>
+                                <div class="nameAct">
+                                    <div class="titleAct">
+                                        <h3 class="caption3">активные лоты:</h3>
+                                    </div>
+                                    <div class="activeSlide clear owl-carousel">
+                                        <div class="slideCard">
+                                            <div class="card">
                                     <span class="cardColor1"><span class="icon-clock1"></span>05<span
                                             class="cardColor6">20:22:57</span></span>
-                                    <span class="cardColor5"><span class="cardColor4">сумма:</span>     2370.00</span>
-                                    <img src="img/jpg/card1.jpg" alt="">
-                                    <div class="menuCard">
-                                        <div class="liCard">
-                                            <span class="cardColor2"><img src="img/png/location.png" alt="">Пункт отбытия:</span>
-                                            <span class="cardColor3">Анкара</span>
-                                        </div>
-                                        <div class="liCard">
-                                            <img src="img/png/location.png" alt="">
-                                            <span class="cardColor2">Пункт прибытия:</span>
-                                            <span class="cardColor3">Стамбул</span>
-                                        </div>
-                                        <div class="menuCard1">
-                                            <div class="liCard">
-                                                <span class="icon-clock1"></span>
-                                                <span class="cardColor2">Время доставки</span>
-                                                <span class="cardColor3">05  20:22:57</span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
                                             </div>
-                                            <div class="liCard">
-                                                <span class="icon-precent"></span>
-                                                <span class="cardColor2">Прибыль в день</span>
-                                                <span class="cardColor3">2.5%</span>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="cardButt">
-                                        <a href="#" class="btnColor3">инвестировать</a>
-                                        <a href="#" class="btnColor4">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent" id="tabs-3">
+                            <div class="rightServ">
+                                <div class="nameServ">
+                                    <h2 class="caption2">название сервиса</h2>
+                                    <p class="textBlock1">Давно выяснено, что при оценке дизайна и композиции читаемый
+                                        текст
+                                        мешает
+                                        сосредоточиться. Lorem
+                                        Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                                        заполнение
+                                        шаблона, а
+                                        также реальное распределение букв. </p>
+                                </div>
+                                <div class="nameAct">
+                                    <div class="titleAct">
+                                        <h3 class="caption3">активные лоты:</h3>
+                                    </div>
+                                    <div class="activeSlide clear owl-carousel">
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent" id="tabs-4">
+                            <div class="rightServ">
+                                <div class="nameServ">
+                                    <h2 class="caption2">название сервиса</h2>
+                                    <p class="textBlock1">Давно выяснено, что при оценке дизайна и композиции читаемый
+                                        текст
+                                        мешает
+                                        сосредоточиться. Lorem
+                                        Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                                        заполнение
+                                        шаблона, а
+                                        также реальное распределение букв. </p>
+                                </div>
+                                <div class="nameAct">
+                                    <div class="titleAct">
+                                        <h3 class="caption3">активные лоты:</h3>
+                                    </div>
+                                    <div class="activeSlide clear owl-carousel">
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slideCard">
+                                            <div class="card">
+                                    <span class="cardColor1"><span class="icon-clock1"></span>05<span
+                                            class="cardColor6">20:22:57</span></span>
+                                                <span class="cardColor5"><span
+                                                        class="cardColor4">сумма:</span>     2370.00</span>
+                                                <img src="img/jpg/card1.jpg" alt="">
+                                                <div class="menuCard">
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт отбытия:</span>
+                                                        <span class="cardColor3">Анкара</span>
+                                                    </div>
+                                                    <div class="liCard">
+                                                        <span style="background-image: url(img/png/location.png)"></span>
+                                                        <span class="cardColor2">Пункт прибытия:</span>
+                                                        <span class="cardColor3">Стамбул</span>
+                                                    </div>
+                                                    <div class="menuCard1">
+                                                        <div class="liCard">
+                                                            <span class="icon-clock1"></span>
+                                                            <span class="cardColor2">Время доставки</span>
+                                                            <span class="cardColor3">05  20:22:57</span>
+                                                        </div>
+                                                        <div class="liCard">
+                                                            <span class="icon-precent"></span>
+                                                            <span class="cardColor2">Прибыль в день</span>
+                                                            <span class="cardColor3">2.5%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardButt">
+                                                    <a href="#" class="btnColor3">инвестировать</a>
+                                                    <a href="#" class="btnColor4">подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -277,8 +736,8 @@
         <div class="profit" style="background-image: url(img/jpg/calculator.jpg)">
             <div class="container clear">
                 <div class="leftCalc clear">
-                    <div class="calcInv">
-                        <input type="text">
+                    <div class="range">
+                        <input type="text" class="rangeSum" id="rangeSum">
                     </div>
                     <div class="conclus">
                         <span>ваша прибыль</span>
@@ -487,15 +946,18 @@
                     <li>
                         <ul>
                             <li>
-                                <a href="#"><span style="background-image: url(img/png/ship.png)"></span>Ocean shipping</a>
-                                <a href="#"><span style="background-image: url(img/png/car.png)"></span>Railway shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/ship.png)"></span>Ocean
+                                    shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/car.png)"></span>Railway
+                                    shipping</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <ul>
                             <li>
-                                <a href="#"><span style="background-image: url(img/png/train.png)"></span>Truck shipping</a>
+                                <a href="#"><span style="background-image: url(img/png/train.png)"></span>Truck
+                                    shipping</a>
                                 <a href="#"><span style="background-image: url(img/png/aircraft.png)"></span>Air
                                     Shipping</a>
                             </li>
